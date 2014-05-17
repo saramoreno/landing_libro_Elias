@@ -1,63 +1,540 @@
-/*
-Syntax error: File to import not found or unreadable: objects/hero.
-              Load paths:
-                /Users/Sara/Documents/proyectos/redradix/landing_libro_Elias/assets/sass
-                /Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets
-                /Users/Sara/Documents/proyectos/redradix/landing_libro_Elias/assets/sass
-                Compass::SpriteImporter
-        on line 24 of /Users/Sara/Documents/proyectos/redradix/landing_libro_Elias/assets/sass/screen.scss
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../Downloads/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
 
-Backtrace:
-/Users/Sara/Documents/proyectos/redradix/landing_libro_Elias/assets/sass/screen.scss:24
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/import_node.rb:66:in `rescue in import'
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/import_node.rb:45:in `import'
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/import_node.rb:28:in `imported_file'
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/import_node.rb:37:in `css_import?'
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:283:in `visit_import'
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `block in with_base'
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:121:in `with_frame'
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `with_base'
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:152:in `visit'
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:52:in `map'
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:161:in `block in visit_children'
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:160:in `visit_children'
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:180:in `visit_root'
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:151:in `visit'
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/root_node.rb:20:in `render'
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/engine.rb:274:in `render'
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/compass/compass-import-once/lib/compass/import-once/engine.rb:17:in `block in render'
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/compass/compass-import-once/lib/compass/import-once/engine.rb:29:in `with_import_scope'
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/compass/compass-import-once/lib/compass/import-once/engine.rb:16:in `render'
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/compass/compass/lib/compass/compiler.rb:171:in `block (2 levels) in compile'
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/compass/compass/lib/compass/compiler.rb:153:in `timed'
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/compass/compass/lib/compass/compiler.rb:166:in `block in compile'
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/compass/compass/lib/compass/logger.rb:46:in `red'
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/compass/compass/lib/compass/compiler.rb:165:in `compile'
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/compass/compass/lib/compass/compiler.rb:144:in `compile_if_required'
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/compass/compass/lib/compass/compiler.rb:129:in `block (2 levels) in run'
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/compass/compass/lib/compass/compiler.rb:127:in `each'
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/compass/compass/lib/compass/compiler.rb:127:in `block in run'
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/compass/compass/lib/compass/compiler.rb:153:in `timed'
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/compass/compass/lib/compass/compiler.rb:126:in `run'
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/compass/compass/lib/compass/commands/update_project.rb:49:in `perform'
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/compass/compass/lib/compass/commands/base.rb:18:in `execute'
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/compass/compass/lib/compass/commands/project_base.rb:19:in `execute'
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/compass/compass/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/compass/compass/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/compass/compass/bin/compass:52:in `block in <main>'
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/compass/compass/bin/compass:66:in `call'
-/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/compass/compass/bin/compass:66:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: objects/hero.\A               Load paths:\A                 /Users/Sara/Documents/proyectos/redradix/landing_libro_Elias/assets/sass\A                 /Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets\A                 /Users/Sara/Documents/proyectos/redradix/landing_libro_Elias/assets/sass\A                 Compass::SpriteImporter\A         on line 24 of /Users/Sara/Documents/proyectos/redradix/landing_libro_Elias/assets/sass/screen.scss"; }
+/* line 22, ../../../../../../Downloads/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Downloads/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Downloads/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Downloads/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Downloads/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Downloads/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Downloads/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Downloads/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*------------------------------------*\
+    $VARIABLES
+\*------------------------------------*/
+/*------------------------------------*\
+    $HELPERS
+    -> Extends, Functions, Mixins, Animations
+\*------------------------------------*/
+/*------------------------------------*\
+    $BASE
+\*------------------------------------*/
+/* Tipos */
+@font-face {
+  font-family: "Economica";
+  src: url("../fonts/Economica-Regular-OTF.otf");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Economica-Regular-OTF.otf?#iefix") format("embedded-opentype"), url("../fonts/Economica-Regular-OTF.woff") format("woff"), url("../fonts/Economica-Regular-OTF.ttf") format("truetype"), url("../fonts/Economica-Regular-OTF.svg#Economica") format("svg");
+  /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+/* Global */
+/* line 13, ../sass/base/_base.scss */
+html {
+  font-size: 87.5%;
+}
+
+/* line 17, ../sass/base/_base.scss */
+body {
+  background: white;
+  color: #99a3b1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  line-height: normal;
+}
+
+/* Block Content */
+/* line 28, ../sass/base/_base.scss */
+h1, h2, h2, h3, h4, h6 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/* line 33, ../sass/base/_base.scss */
+p {
+  line-height: 1.3;
+}
+
+/* Inline Content */
+/* line 39, ../sass/base/_base.scss */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 44, ../sass/base/_base.scss */
+p a {
+  color: #e8f8f5;
+}
+
+/* line 49, ../sass/base/_base.scss */
+.centered {
+  text-align: center;
+}
+
+/* line 52, ../sass/base/_base.scss */
+.left-align {
+  text-align: left;
+}
+
+/* line 55, ../sass/base/_base.scss */
+.right-align {
+  text-align: right;
+}
+
+/* line 60, ../sass/base/_base.scss */
+.left {
+  float: left;
+}
+
+/* line 63, ../sass/base/_base.scss */
+.right {
+  float: right;
+}
+
+/* line 66, ../sass/base/_base.scss */
+.center {
+  margin: 0 auto;
+}
+
+/* line 69, ../sass/base/_base.scss */
+.no-float {
+  float: none;
+}
+
+/* line 73, ../sass/base/_base.scss */
+.inline-content {
+  display: inline-block;
+}
+
+/*------------------------------------*\
+    $FORMS
+\*------------------------------------*/
+/* line 5, ../sass/base/_forms.scss */
+form {
+  margin: 0;
+}
+
+/* line 9, ../sass/base/_forms.scss */
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 15, ../sass/base/_forms.scss */
+button,
+input,
+textarea {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+}
+
+/* line 22, ../sass/base/_forms.scss */
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+/* line 27, ../sass/base/_forms.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* line 32, ../sass/base/_forms.scss */
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+/* line 37, ../sass/base/_forms.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+}
+
+/*------------------------------------*\
+    $SPECIFIC FORMS
+\*------------------------------------*/
+/*------------------------------------*\
+    $GRID
+\*------------------------------------*/
+@media only screen and (min-width: 50em) {
+  /* line 20, ../sass/base/_grid.scss */
+  .one-whole {
+    width: 100%;
+  }
+
+  /* line 26, ../sass/base/_grid.scss */
+  .one-half, .two-quarters {
+    width: 50%;
+  }
+
+  /* line 31, ../sass/base/_grid.scss */
+  .one-third {
+    width: 33.333%;
+  }
+
+  /* line 32, ../sass/base/_grid.scss */
+  .two-thirds {
+    width: 66.666%;
+  }
+
+  /* line 38, ../sass/base/_grid.scss */
+  .one-quarter {
+    width: 25%;
+  }
+
+  /* line 40, ../sass/base/_grid.scss */
+  .three-quarters {
+    width: 75%;
+  }
+}
+/*------------------------------------*\
+    $HEADINGS
+\*------------------------------------*/
+/* line 6, ../sass/base/_headings.scss */
+h1, .alpha {
+  font-size: 28px;
+  font-size: 2rem;
+}
+
+/* line 9, ../sass/base/_headings.scss */
+h2, .beta {
+  font-size: 24px;
+  font-size: 1.71429rem;
+}
+
+/* line 12, ../sass/base/_headings.scss */
+h3, .gamma {
+  font-size: 20px;
+  font-size: 1.42857rem;
+}
+
+/*------------------------------------*\
+    $LAYOUT
+\*------------------------------------*/
+/* line 6, ../sass/base/_layout.scss */
+.wrapper {
+  width: 98%;
+  max-width: 975px;
+  margin: 0 auto;
+}
+
+/*------------------------------------*\
+    $GRIDS
+\*------------------------------------*/
+/* Grid Container */
+/* line 18, ../sass/base/_layout.scss */
+.g {
+  letter-spacing: -0.35em;
+}
+/* line 20, ../sass/base/_layout.scss */
+.g > * {
+  letter-spacing: normal;
+}
+
+/* Grid Item */
+/* line 26, ../sass/base/_layout.scss */
+.gi {
+  letter-spacing: normal;
+}
+@media only screen and (min-width: 50em) {
+  /* line 26, ../sass/base/_layout.scss */
+  .gi {
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+/* line 37, ../sass/base/_layout.scss */
+.mr {
+  margin-right: 1%;
+}
+
+/* line 41, ../sass/base/_layout.scss */
+.ml {
+  margin-left: 1%;
+}
+
+/* line 45, ../sass/base/_layout.scss */
+.half-width {
+  width: 49%;
+}
+
+/* line 49, ../sass/base/_layout.scss */
+.forty-width {
+  width: 39%;
+}
+
+/* line 53, ../sass/base/_layout.scss */
+.forty-width {
+  width: 39%;
+}
+
+/* line 57, ../sass/base/_layout.scss */
+.sixty-width {
+  width: 59%;
+}
+
+/* line 61, ../sass/base/_layout.scss */
+.sixty-width {
+  width: 59%;
+}
+
+/* line 65, ../sass/base/_layout.scss */
+.onethird-width {
+  width: 32.33%;
+}
+
+/* line 69, ../sass/base/_layout.scss */
+.eighty-width {
+  width: 79%;
+}
+
+/*------------------------------------*\
+    $NORMALIZE
+\*------------------------------------*/
+/* line 6, ../sass/base/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* line 20, ../sass/base/_normalize.scss */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 24, ../sass/base/_normalize.scss */
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 30, ../sass/base/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* line 35, ../sass/base/_normalize.scss */
+a {
+  background: transparent;
+}
+
+/* line 39, ../sass/base/_normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/* line 43, ../sass/base/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* line 48, ../sass/base/_normalize.scss */
+h1, h2, h2, h3, h4, h6 {
+  margin: 0;
+}
+
+/* line 58, ../sass/base/_normalize.scss */
+p {
+  margin: 0;
+}
+
+/* line 62, ../sass/base/_normalize.scss */
+::selection {
+  background: #e8f8f5;
+  color: #FFF;
+}
+
+/* line 66, ../sass/base/_normalize.scss */
+::-moz-selection {
+  background: #e8f8f5;
+  color: #FFF;
+}
+
+/* line 71, ../sass/base/_normalize.scss */
+ul, ol, dl, dd {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 77, ../sass/base/_normalize.scss */
+img {
+  border: 0;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 84, ../sass/base/_normalize.scss */
+iframe {
+  max-width: 100%;
+}
+
+/* line 88, ../sass/base/_normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* line 92, ../sass/base/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*------------------------------------------*\
+    Icons
+\*------------------------------------------*/
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.otf");
+  /* IE9 Compat Modes */
+  src: url("../fonts/icomoon.otf?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg#icomoon") format("svg");
+  /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+/* line 5, ../sass/objects/_icons.scss */
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 19, ../sass/objects/_icons.scss */
+.icon-envelope:before {
+  content: "\e608";
+}
+
+/* line 22, ../sass/objects/_icons.scss */
+.icon-linkedin:before {
+  content: "\e607";
+}
+
+/* line 26, ../sass/objects/_icons.scss */
+.icon-pencil:before {
+  content: "\e604";
+}
+
+/* line 29, ../sass/objects/_icons.scss */
+.icon-file:before {
+  content: "\e615";
+}
+
+/* line 32, ../sass/objects/_icons.scss */
+.icon-bubble:before {
+  content: "\e600";
+}
+
+/* line 35, ../sass/objects/_icons.scss */
+.icon-heart:before {
+  content: "\e601";
+}
+
+/* line 38, ../sass/objects/_icons.scss */
+.icon-mail:before {
+  content: "\e602";
+}
+
+/* line 41, ../sass/objects/_icons.scss */
+.icon-googleplus:before {
+  content: "\e603";
+}
+
+/* line 44, ../sass/objects/_icons.scss */
+.icon-facebook:before {
+  content: "\e605";
+}
+
+/* line 47, ../sass/objects/_icons.scss */
+.icon-twitter:before {
+  content: "\e606";
+}
