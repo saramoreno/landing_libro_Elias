@@ -5,7 +5,7 @@
 
 /* Tipos */
 
-@include font-face('Economica', 'Economica-Regular-OTF');
+@include font-face('Lato', 'Lato-Bla.ttf');
 
 
 /* Global */
@@ -20,6 +20,10 @@ body{
   font-family: $font;
   font-size: 100%;
   line-height: $base-lineHeight;
+}
+
+section {
+  padding: 1.25em; 
 }
 
 

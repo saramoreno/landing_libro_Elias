@@ -31,3 +31,16 @@ h3, .gamma {
 // .kilo {
 //   @include font-size($font_size_kilo);
 // }
+
+.normal-heading {
+  @include font-size(30);
+  font-weight: 300;
+  margin: 1.25em 0 0.625em 0;
+  text-align: center;
+}
+
+.big-heading {
+  @include font-size(36);
+  @extend .normal-heading;
+}
+
