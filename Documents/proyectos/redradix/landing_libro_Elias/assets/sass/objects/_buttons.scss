@@ -32,11 +32,13 @@
 .btn {
   display:block;
   background: $buttonColor;
+  color: #fff;
   text-align: center;
   width: 350px;
   padding: .625em;
   margin: 0 auto;
   border-bottom: 5px solid darken($buttonColor, 10%);
+  border-top: 1px solid transparent;
   @include border-radius(5px);
   @include font-size(18);
   font-weight: bold;

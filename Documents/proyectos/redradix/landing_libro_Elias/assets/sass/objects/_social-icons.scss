@@ -1,0 +1,57 @@
+/*------------------------------------------*\
+    Social icons
+\*------------------------------------------*/
+
+.social-icons {
+  text-align: center;
+  a {
+    position: relative;
+    background: #CCCCCC;
+    padding: .8em;
+    display: inline-block;
+    @include border-radius(50%);
+    color: #fff;
+    margin: 2em .2em;
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    @include font-size(15);
+
+    &:hover {
+      background: darken(#ccc, 30%);
+    }
+
+    &:hover .tooltip {
+      display: inline;
+    }
+  }
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  bottom: 2.5em;
+  left: -1em;
+  color: #fff;
+
+
+  .text {
+    background: #333;
+    padding: .5em 1em;
+    @include font-size(12);
+    @include border-radius(3px);
+  }
+
+  .arrow {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #333;
+    position: relative; 
+    top: .8em;
+  }
+}
+.mail {
+    left:-.4em;
+  }

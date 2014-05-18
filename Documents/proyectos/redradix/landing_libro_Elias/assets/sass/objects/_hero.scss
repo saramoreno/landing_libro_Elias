@@ -5,6 +5,7 @@
 .hero {
   background-color: $secondaryBg;
   padding-top: 2.25em;
+  z-index: 10;
 
   .complementary-text {
     display: inline-block;
@@ -24,6 +25,10 @@
   figure {
     display: inline-block;
     vertical-align: top;
+  }
+
+  .buy {
+    margin-top: 1em;
   }
 
   .privacy {

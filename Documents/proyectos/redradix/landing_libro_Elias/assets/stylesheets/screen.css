@@ -566,15 +566,16 @@ table {
 .hero {
   background-color: #1abc9c;
   padding-top: 2.25em;
+  z-index: 10;
 }
-/* line 9, ../sass/objects/_hero.scss */
+/* line 10, ../sass/objects/_hero.scss */
 .hero .complementary-text {
   display: inline-block;
   vertical-align: top;
   color: #fff;
   margin-left: 1.25em;
 }
-/* line 15, ../sass/objects/_hero.scss */
+/* line 16, ../sass/objects/_hero.scss */
 .hero .complementary-text p {
   font-size: 16px;
   font-size: 1.14286rem;
@@ -583,17 +584,21 @@ table {
   font-weight: 300;
   margin-bottom: .625em;
 }
-/* line 24, ../sass/objects/_hero.scss */
+/* line 25, ../sass/objects/_hero.scss */
 .hero figure {
   display: inline-block;
   vertical-align: top;
 }
-/* line 29, ../sass/objects/_hero.scss */
+/* line 30, ../sass/objects/_hero.scss */
+.hero .buy {
+  margin-top: 1em;
+}
+/* line 34, ../sass/objects/_hero.scss */
 .hero .privacy {
   text-align: center;
   margin-top: .625em;
 }
-/* line 33, ../sass/objects/_hero.scss */
+/* line 38, ../sass/objects/_hero.scss */
 .hero .privacy a:hover {
   text-decoration: underline;
   color: #428bca;
@@ -638,11 +643,13 @@ table {
 .btn {
   display: block;
   background: #2ecc71;
+  color: #fff;
   text-align: center;
   width: 350px;
   padding: .625em;
   margin: 0 auto;
   border-bottom: 5px solid #25a25a;
+  border-top: 1px solid transparent;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   background-clip: padding-box;
@@ -654,7 +661,7 @@ table {
   -moz-transition: all 0.5s;
   -webkit-transition: all 0.5s;
 }
-/* line 47, ../sass/objects/_buttons.scss */
+/* line 49, ../sass/objects/_buttons.scss */
 .btn:hover {
   background: #29b765;
   border-bottom: 5px solid #25a25a;
@@ -662,4 +669,73 @@ table {
   border-right: 1px solid #25a25a;
   border-left: 1px solid #25a25a;
   margin: -1px auto 0 auto;
+}
+
+/*------------------------------------------*\
+    Social icons
+\*------------------------------------------*/
+/* line 5, ../sass/objects/_social-icons.scss */
+.social-icons {
+  text-align: center;
+}
+/* line 7, ../sass/objects/_social-icons.scss */
+.social-icons a {
+  position: relative;
+  background: #CCCCCC;
+  padding: .8em;
+  display: inline-block;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  color: #fff;
+  margin: 2em .2em;
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  font-size: 15px;
+  font-size: 1.07143rem;
+}
+/* line 20, ../sass/objects/_social-icons.scss */
+.social-icons a:hover {
+  background: gray;
+}
+/* line 24, ../sass/objects/_social-icons.scss */
+.social-icons a:hover .tooltip {
+  display: inline;
+}
+
+/* line 30, ../sass/objects/_social-icons.scss */
+.tooltip {
+  display: none;
+  position: absolute;
+  bottom: 2.5em;
+  left: -1em;
+  color: #fff;
+}
+/* line 38, ../sass/objects/_social-icons.scss */
+.tooltip .text {
+  background: #333;
+  padding: .5em 1em;
+  font-size: 12px;
+  font-size: 0.85714rem;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+}
+/* line 45, ../sass/objects/_social-icons.scss */
+.tooltip .arrow {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #333;
+  position: relative;
+  top: .8em;
+}
+
+/* line 55, ../sass/objects/_social-icons.scss */
+.mail {
+  left: -.4em;
 }
