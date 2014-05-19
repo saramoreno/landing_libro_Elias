@@ -1,0 +1,52 @@
+/*------------------------------------------*\
+    Sections-descriptions-author-reviews
+\*------------------------------------------*/
+
+.descriptions {
+  background-color: $primary;
+  font-family: $font;
+}
+
+.author {
+  figure {
+    text-align: center;
+    margin: 4em 0;
+  }
+
+  h3, p {
+    text-align: center;
+    padding-bottom: 2em;
+    font-weight: bold;
+  }
+
+}
+
+.reviews {
+   background-color: $primary;
+
+   .reviews-quote {
+    position: relative;
+    right: 1em;
+    top: 0;
+    @include font-size(40);
+    line-height: 70px;
+    color: #ccc;
+   }
+
+   p {
+    padding-left: 2em;
+   }
+
+   .info-user {
+    text-align: center;
+    color: #428bca;
+    @include font-size(16);
+    margin-top: .5em;
+
+    a:hover {
+      text-decoration: underline;
+    }
+   }
+
+
+}

@@ -84,17 +84,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   /* IE9 Compat Modes */
   src: url("../fonts/Lato-Bla.ttf.otf?#iefix") format("embedded-opentype"), url("../fonts/Lato-Bla.ttf.woff") format("woff"), url("../fonts/Lato-Bla.ttf.ttf") format("truetype"), url("../fonts/Lato-Bla.ttf.svg#Lato") format("svg");
   /* Legacy iOS */
+  font-weight: "Lato-Light.ttf";
+  font-style: "Lato-Bol.ttf";
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Bentham";
+  src: url("../fonts/Bentham.otf.otf");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Bentham.otf.otf?#iefix") format("embedded-opentype"), url("../fonts/Bentham.otf.woff") format("woff"), url("../fonts/Bentham.otf.ttf") format("truetype"), url("../fonts/Bentham.otf.svg#Bentham") format("svg");
+  /* Legacy iOS */
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
 }
 /* Global */
-/* line 13, ../sass/base/_base.scss */
+/* line 14, ../sass/base/_base.scss */
 html {
   font-size: 87.5%;
 }
 
-/* line 17, ../sass/base/_base.scss */
+/* line 18, ../sass/base/_base.scss */
 body {
   background: white;
   color: #333333;
@@ -103,71 +113,78 @@ body {
   line-height: normal;
 }
 
-/* line 25, ../sass/base/_base.scss */
+/* line 26, ../sass/base/_base.scss */
 section {
   padding: 5em 1.25em;
 }
 
 /* Block Content */
-/* line 32, ../sass/base/_base.scss */
+/* line 33, ../sass/base/_base.scss */
 h1, h2, h2, h3, h4, h6 {
   font-size: 1em;
   font-weight: bold;
 }
 
-/* line 37, ../sass/base/_base.scss */
+/* line 38, ../sass/base/_base.scss */
 p {
   line-height: 1.3;
 }
 
 /* Inline Content */
-/* line 43, ../sass/base/_base.scss */
+/* line 44, ../sass/base/_base.scss */
 a {
   color: inherit;
   text-decoration: none;
 }
 
-/* line 48, ../sass/base/_base.scss */
+/* line 49, ../sass/base/_base.scss */
 p a {
   color: #e8f8f5;
 }
 
 /* line 53, ../sass/base/_base.scss */
+.normal-p {
+  font-size: 16px;
+  font-size: 1.14286rem;
+  font-weight: bold;
+}
+
+/* line 59, ../sass/base/_base.scss */
 .centered {
   text-align: center;
 }
 
-/* line 56, ../sass/base/_base.scss */
+/* line 62, ../sass/base/_base.scss */
 .left-align {
   text-align: left;
 }
 
-/* line 59, ../sass/base/_base.scss */
+/* line 65, ../sass/base/_base.scss */
 .right-align {
   text-align: right;
 }
 
-/* line 64, ../sass/base/_base.scss */
+/* line 70, ../sass/base/_base.scss */
 .left {
   float: left;
 }
 
-/* line 67, ../sass/base/_base.scss */
+/* line 73, ../sass/base/_base.scss */
 .right {
   float: right;
 }
 
-/* line 70, ../sass/base/_base.scss */
+/* line 76, ../sass/base/_base.scss */
 .center {
   margin: 0 auto;
 }
 
-/* line 73, ../sass/base/_base.scss */
+/* line 79, ../sass/base/_base.scss */
 .no-float {
   float: none;
 }
 
-/* line 77, ../sass/base/_base.scss */
+/* line 83, ../sass/base/_base.scss */
 .inline-content {
   display: inline-block;
 }
@@ -519,42 +536,47 @@ table {
   content: "\e607";
 }
 
-/* line 26, ../sass/objects/_icons.scss */
+/* line 25, ../sass/objects/_icons.scss */
 .icon-pencil:before {
   content: "\e604";
 }
 
-/* line 29, ../sass/objects/_icons.scss */
+/* line 28, ../sass/objects/_icons.scss */
 .icon-file:before {
   content: "\e615";
 }
 
-/* line 32, ../sass/objects/_icons.scss */
+/* line 31, ../sass/objects/_icons.scss */
 .icon-bubble:before {
   content: "\e600";
 }
 
-/* line 35, ../sass/objects/_icons.scss */
+/* line 34, ../sass/objects/_icons.scss */
+.icon-quotes-left:before {
+  content: "\e609";
+}
+
+/* line 37, ../sass/objects/_icons.scss */
 .icon-heart:before {
   content: "\e601";
 }
 
-/* line 38, ../sass/objects/_icons.scss */
+/* line 40, ../sass/objects/_icons.scss */
 .icon-mail:before {
   content: "\e602";
 }
 
-/* line 41, ../sass/objects/_icons.scss */
+/* line 43, ../sass/objects/_icons.scss */
 .icon-googleplus:before {
   content: "\e603";
 }
 
-/* line 44, ../sass/objects/_icons.scss */
+/* line 46, ../sass/objects/_icons.scss */
 .icon-facebook:before {
   content: "\e605";
 }
 
-/* line 47, ../sass/objects/_icons.scss */
+/* line 49, ../sass/objects/_icons.scss */
 .icon-twitter:before {
   content: "\e606";
 }
@@ -777,11 +799,55 @@ table {
 }
 
 /*------------------------------------------*\
-    DESCRIPTIONS
+    Sections-descriptions-author-reviews
 \*------------------------------------------*/
-/* line 5, ../sass/objects/_descriptions-section.scss */
+/* line 5, ../sass/objects/_sections.scss */
 .descriptions {
   background-color: #e8f8f5;
+  font-family: "Lato", sans-serif;
+}
+
+/* line 11, ../sass/objects/_sections.scss */
+.author figure {
+  text-align: center;
+  margin: 4em 0;
+}
+/* line 16, ../sass/objects/_sections.scss */
+.author h3, .author p {
+  text-align: center;
+  padding-bottom: 2em;
+  font-weight: bold;
+}
+
+/* line 24, ../sass/objects/_sections.scss */
+.reviews {
+  background-color: #e8f8f5;
+}
+/* line 27, ../sass/objects/_sections.scss */
+.reviews .reviews-quote {
+  position: relative;
+  right: 1em;
+  top: 0;
+  font-size: 40px;
+  font-size: 2.85714rem;
+  line-height: 70px;
+  color: #ccc;
+}
+/* line 36, ../sass/objects/_sections.scss */
+.reviews p {
+  padding-left: 2em;
+}
+/* line 40, ../sass/objects/_sections.scss */
+.reviews .info-user {
+  text-align: center;
+  color: #428bca;
+  font-size: 16px;
+  font-size: 1.14286rem;
+  margin-top: .5em;
+}
+/* line 46, ../sass/objects/_sections.scss */
+.reviews .info-user a:hover {
+  text-decoration: underline;
 }
 
 /*------------------------------------------*\
@@ -793,7 +859,7 @@ table {
 }
 /* line 7, ../sass/objects/_icon-list.scss */
 .icon-list li {
-  width: 33%;
+  width: 33.3%;
   display: inline-block;
   vertical-align: top;
   padding: 2em 1.5em 2em 4.4em;
@@ -809,28 +875,106 @@ table {
 .icon-list li p {
   font-size: 16px;
   font-size: 1.14286rem;
+  line-height: 1.428571429;
 }
-/* line 24, ../sass/objects/_icon-list.scss */
+/* line 25, ../sass/objects/_icon-list.scss */
 .icon-list .list-1 {
-  background: url(../images/list-1.png) no-repeat 0 30%;
+  background: url(../images/list-1.png) no-repeat 0 20%;
 }
-/* line 27, ../sass/objects/_icon-list.scss */
+/* line 28, ../sass/objects/_icon-list.scss */
 .icon-list .list-2 {
-  background: url(../images/list-2.png) no-repeat 0 30%;
+  background: url(../images/list-2.png) no-repeat 0 20%;
 }
-/* line 30, ../sass/objects/_icon-list.scss */
+/* line 31, ../sass/objects/_icon-list.scss */
 .icon-list .list-3 {
-  background: url(../images/list-3.png) no-repeat 0 30%;
+  background: url(../images/list-3.png) no-repeat 0 20%;
 }
-/* line 33, ../sass/objects/_icon-list.scss */
+/* line 34, ../sass/objects/_icon-list.scss */
 .icon-list .list-4 {
-  background: url(../images/list-4.png) no-repeat 0 30%;
+  background: url(../images/list-4.png) no-repeat 0 20%;
 }
-/* line 36, ../sass/objects/_icon-list.scss */
+/* line 37, ../sass/objects/_icon-list.scss */
 .icon-list .list-5 {
-  background: url(../images/list-5.png) no-repeat 0 30%;
+  background: url(../images/list-5.png) no-repeat 0 20%;
 }
-/* line 39, ../sass/objects/_icon-list.scss */
+/* line 40, ../sass/objects/_icon-list.scss */
 .icon-list .list-6 {
-  background: url(../images/list-6.png) no-repeat 0 30%;
+  background: url(../images/list-6.png) no-repeat 0 20%;
 }
+
+/*------------------------------------------*\
+    Carousel
+\*------------------------------------------*/
+/* line 5, ../sass/objects/_carousel.scss */
+.carousel {
+  padding: 4em 0;
+}
+/* line 7, ../sass/objects/_carousel.scss */
+.carousel .carousel-wrapper {
+  width: 6664px;
+  -webkit-animation: slide 20s;
+}
+/* line 12, ../sass/objects/_carousel.scss */
+.carousel .wrapper-outer {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+/* line 17, ../sass/objects/_carousel.scss */
+.carousel .item {
+  display: inline-block;
+  width: 238px;
+  margin: 3px;
+}
+/* line 22, ../sass/objects/_carousel.scss */
+.carousel .thumbnail {
+  display: block;
+  width: 200px;
+  height: auto;
+  max-width: 100%;
+  padding: 4px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+/* line 36, ../sass/objects/_carousel.scss */
+.carousel-controls {
+  text-align: center;
+  margin-top: 1rem;
+}
+/* line 39, ../sass/objects/_carousel.scss */
+.carousel-controls .pag {
+  display: inline-block;
+  cursor: pointer;
+}
+/* line 43, ../sass/objects/_carousel.scss */
+.carousel-controls .pag span {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 5px;
+  opacity: 0.5;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  background: #869791;
+}
+/* line 52, ../sass/objects/_carousel.scss */
+.carousel-controls .pag:hover span {
+  background: #333;
+}
+/* line 56, ../sass/objects/_carousel.scss */
+.carousel-controls .active span {
+  background: #333;
+}
+
+/*------------------------------------------*\
+    Footer
+\*------------------------------------------*/

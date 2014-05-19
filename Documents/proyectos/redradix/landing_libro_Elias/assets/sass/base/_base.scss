@@ -5,7 +5,8 @@
 
 /* Tipos */
 
-@include font-face('Lato', 'Lato-Bla.ttf');
+@include font-face('Lato', 'Lato-Bla.ttf', 'Lato-Light.ttf', 'Lato-Bol.ttf');
+@include font-face('Bentham', 'Bentham.otf');
 
 
 /* Global */
@@ -47,6 +48,11 @@ a{
 
 p a{
   color: $primary;
+}
+
+.normal-p {
+  @include font-size(16);
+  font-weight: bold;
 }
  
 //text align

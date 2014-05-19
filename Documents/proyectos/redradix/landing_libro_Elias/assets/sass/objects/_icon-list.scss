@@ -5,7 +5,7 @@
 .icon-list {
   padding: 4em 0;
   li {
-    width: 33%;
+    width: 33.3%;
     display: inline-block;
     vertical-align: top;
     padding: 2em 1.5em 2em 4.4em;
@@ -18,25 +18,26 @@
 
     p {
       @include font-size(16);
+      line-height:1.428571429;
     }
   }
 
   .list-1 {
-    background: url(../images/list-1.png) no-repeat 0 30%;
+    background: url(../images/list-1.png) no-repeat 0 20%;
   }
   .list-2 {
-    background: url(../images/list-2.png) no-repeat 0 30%;
+    background: url(../images/list-2.png) no-repeat 0 20%;
   }
   .list-3 {
-    background: url(../images/list-3.png) no-repeat 0 30%;
+    background: url(../images/list-3.png) no-repeat 0 20%;
   }
   .list-4 {
-    background: url(../images/list-4.png) no-repeat 0 30%;
+    background: url(../images/list-4.png) no-repeat 0 20%;
   }
   .list-5 {
-    background: url(../images/list-5.png) no-repeat 0 30%;
+    background: url(../images/list-5.png) no-repeat 0 20%;
   }
   .list-6 {
-    background: url(../images/list-6.png) no-repeat 0 30%;
+    background: url(../images/list-6.png) no-repeat 0 20%;
   }
 }
