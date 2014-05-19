@@ -1,0 +1,30 @@
+/*------------------------------------------*\
+    Icon-title
+\*------------------------------------------*/
+
+.icon-title {
+  text-align: center;
+
+  .icon {
+    background: $secondaryBg;
+    padding: 1.5em;
+    display: inline-block;
+    @include border-radius(50%);
+    color: #fff;
+    @include font-size(20);
+  }
+
+  h2 {
+    font-weight: 300;
+    padding: .625em 0;
+    @include font-size(30);
+  }
+
+  hr {
+    width: 120px;
+    height: 2px;
+    background-color: #ccc;
+    border: none;
+    opacity: .7;
+  }
+}

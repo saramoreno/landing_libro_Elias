@@ -97,7 +97,7 @@ html {
 /* line 17, ../sass/base/_base.scss */
 body {
   background: white;
-  color: #99a3b1;
+  color: #333333;
   font-family: "Lato", sans-serif;
   font-size: 100%;
   line-height: normal;
@@ -105,7 +105,7 @@ body {
 
 /* line 25, ../sass/base/_base.scss */
 section {
-  padding: 1.25em;
+  padding: 5em 1.25em;
 }
 
 /* Block Content */
@@ -738,4 +738,99 @@ table {
 /* line 55, ../sass/objects/_social-icons.scss */
 .mail {
   left: -.4em;
+}
+
+/*------------------------------------------*\
+    Icon-title
+\*------------------------------------------*/
+/* line 5, ../sass/objects/_icon-title.scss */
+.icon-title {
+  text-align: center;
+}
+/* line 8, ../sass/objects/_icon-title.scss */
+.icon-title .icon {
+  background: #1abc9c;
+  padding: 1.5em;
+  display: inline-block;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  color: #fff;
+  font-size: 20px;
+  font-size: 1.42857rem;
+}
+/* line 17, ../sass/objects/_icon-title.scss */
+.icon-title h2 {
+  font-weight: 300;
+  padding: .625em 0;
+  font-size: 30px;
+  font-size: 2.14286rem;
+}
+/* line 23, ../sass/objects/_icon-title.scss */
+.icon-title hr {
+  width: 120px;
+  height: 2px;
+  background-color: #ccc;
+  border: none;
+  opacity: .7;
+}
+
+/*------------------------------------------*\
+    DESCRIPTIONS
+\*------------------------------------------*/
+/* line 5, ../sass/objects/_descriptions-section.scss */
+.descriptions {
+  background-color: #e8f8f5;
+}
+
+/*------------------------------------------*\
+    Icon list
+\*------------------------------------------*/
+/* line 5, ../sass/objects/_icon-list.scss */
+.icon-list {
+  padding: 4em 0;
+}
+/* line 7, ../sass/objects/_icon-list.scss */
+.icon-list li {
+  width: 33%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 2em 1.5em 2em 4.4em;
+}
+/* line 13, ../sass/objects/_icon-list.scss */
+.icon-list li h3 {
+  padding-bottom: .625em;
+  font-size: 24px;
+  font-size: 1.71429rem;
+  font-weight: 400;
+}
+/* line 19, ../sass/objects/_icon-list.scss */
+.icon-list li p {
+  font-size: 16px;
+  font-size: 1.14286rem;
+}
+/* line 24, ../sass/objects/_icon-list.scss */
+.icon-list .list-1 {
+  background: url(../images/list-1.png) no-repeat 0 30%;
+}
+/* line 27, ../sass/objects/_icon-list.scss */
+.icon-list .list-2 {
+  background: url(../images/list-2.png) no-repeat 0 30%;
+}
+/* line 30, ../sass/objects/_icon-list.scss */
+.icon-list .list-3 {
+  background: url(../images/list-3.png) no-repeat 0 30%;
+}
+/* line 33, ../sass/objects/_icon-list.scss */
+.icon-list .list-4 {
+  background: url(../images/list-4.png) no-repeat 0 30%;
+}
+/* line 36, ../sass/objects/_icon-list.scss */
+.icon-list .list-5 {
+  background: url(../images/list-5.png) no-repeat 0 30%;
+}
+/* line 39, ../sass/objects/_icon-list.scss */
+.icon-list .list-6 {
+  background: url(../images/list-6.png) no-repeat 0 30%;
 }

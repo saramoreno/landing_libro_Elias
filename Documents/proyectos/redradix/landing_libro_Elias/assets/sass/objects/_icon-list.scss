@@ -1,0 +1,42 @@
+/*------------------------------------------*\
+    Icon list
+\*------------------------------------------*/
+
+.icon-list {
+  padding: 4em 0;
+  li {
+    width: 33%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 2em 1.5em 2em 4.4em;
+
+    h3 {
+      padding-bottom: .625em;
+      @include font-size(24);
+      font-weight: 400;
+    }
+
+    p {
+      @include font-size(16);
+    }
+  }
+
+  .list-1 {
+    background: url(../images/list-1.png) no-repeat 0 30%;
+  }
+  .list-2 {
+    background: url(../images/list-2.png) no-repeat 0 30%;
+  }
+  .list-3 {
+    background: url(../images/list-3.png) no-repeat 0 30%;
+  }
+  .list-4 {
+    background: url(../images/list-4.png) no-repeat 0 30%;
+  }
+  .list-5 {
+    background: url(../images/list-5.png) no-repeat 0 30%;
+  }
+  .list-6 {
+    background: url(../images/list-6.png) no-repeat 0 30%;
+  }
+}
