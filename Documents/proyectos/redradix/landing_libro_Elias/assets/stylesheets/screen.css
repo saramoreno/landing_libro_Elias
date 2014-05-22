@@ -978,3 +978,40 @@ table {
 /*------------------------------------------*\
     Footer
 \*------------------------------------------*/
+/* line 5, ../sass/objects/_footer.scss */
+.wrapper-footer {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1.25em;
+  width: 80%;
+  margin: 2em auto 4em;
+}
+/* line 11, ../sass/objects/_footer.scss */
+.wrapper-footer figure {
+  width: 227px;
+  height: 297px;
+}
+/* line 16, ../sass/objects/_footer.scss */
+.wrapper-footer .complementary-text {
+  width: 60%;
+  margin-left: 4em;
+}
+/* line 20, ../sass/objects/_footer.scss */
+.wrapper-footer .complementary-text h3 {
+  text-align: center;
+  padding: 1em 0;
+}
+/* line 25, ../sass/objects/_footer.scss */
+.wrapper-footer .complementary-text .small {
+  text-align: center;
+  padding-top: .5em;
+}
+
+/* line 32, ../sass/objects/_footer.scss */
+.sub-footer {
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  font-size: 1.07143rem;
+  padding: 2em 0;
+}
