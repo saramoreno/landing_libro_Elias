@@ -16,14 +16,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-envelope:before {
+
+.icon-next:before {
   content: "\e608";
+}
+.icon-envelope:before {
+  content: "\e609";
 }
 .icon-linkedin:before {
   content: "\e607";
-}
-.icon-pencil:before {
-  content: "\e604";
 }
 .icon-file:before {
   content: "\e615";
@@ -31,14 +32,8 @@
 .icon-bubble:before {
   content: "\e600";
 }
-.icon-quotes-left:before {
-  content: "\e609";
-}
 .icon-heart:before {
   content: "\e601";
-}
-.icon-mail:before {
-  content: "\e602";
 }
 .icon-googleplus:before {
   content: "\e603";
@@ -49,3 +44,13 @@
 .icon-twitter:before {
   content: "\e606";
 }
+.icon-pencil:before {
+  content: "\e604";
+}
+.icon-arrow-right:before {
+  content: "\e602";
+}
+.icon-arrow-left:before {
+  content: "\e60a";
+}
+

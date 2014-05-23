@@ -3,7 +3,7 @@
 \*------------------------------------------*/
 
 .wrapper-footer {
-  background: rgba(0, 0, 0, .3);
+  background: rgba(0, 0, 0, .21);
   padding: 1.25em;
   width: 80%;
   margin: 2em auto 4em;
@@ -30,7 +30,7 @@
 }
 
 .sub-footer {
-  background: rgba(0, 0, 0, .3);
+  background: rgba(0, 0, 0, .21);
   color: #fff;
   text-align: center;
   @include font-size(15);

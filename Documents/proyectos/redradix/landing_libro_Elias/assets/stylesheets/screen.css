@@ -526,59 +526,64 @@ table {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 19, ../sass/objects/_icons.scss */
-.icon-envelope:before {
+/* line 20, ../sass/objects/_icons.scss */
+.icon-next:before {
   content: "\e608";
 }
 
-/* line 22, ../sass/objects/_icons.scss */
+/* line 23, ../sass/objects/_icons.scss */
+.icon-envelope:before {
+  content: "\e609";
+}
+
+/* line 26, ../sass/objects/_icons.scss */
 .icon-linkedin:before {
   content: "\e607";
 }
 
-/* line 25, ../sass/objects/_icons.scss */
-.icon-pencil:before {
-  content: "\e604";
-}
-
-/* line 28, ../sass/objects/_icons.scss */
+/* line 29, ../sass/objects/_icons.scss */
 .icon-file:before {
   content: "\e615";
 }
 
-/* line 31, ../sass/objects/_icons.scss */
+/* line 32, ../sass/objects/_icons.scss */
 .icon-bubble:before {
   content: "\e600";
 }
 
-/* line 34, ../sass/objects/_icons.scss */
-.icon-quotes-left:before {
-  content: "\e609";
-}
-
-/* line 37, ../sass/objects/_icons.scss */
+/* line 35, ../sass/objects/_icons.scss */
 .icon-heart:before {
   content: "\e601";
 }
 
-/* line 40, ../sass/objects/_icons.scss */
-.icon-mail:before {
-  content: "\e602";
-}
-
-/* line 43, ../sass/objects/_icons.scss */
+/* line 38, ../sass/objects/_icons.scss */
 .icon-googleplus:before {
   content: "\e603";
 }
 
-/* line 46, ../sass/objects/_icons.scss */
+/* line 41, ../sass/objects/_icons.scss */
 .icon-facebook:before {
   content: "\e605";
 }
 
-/* line 49, ../sass/objects/_icons.scss */
+/* line 44, ../sass/objects/_icons.scss */
 .icon-twitter:before {
   content: "\e606";
+}
+
+/* line 47, ../sass/objects/_icons.scss */
+.icon-pencil:before {
+  content: "\e604";
+}
+
+/* line 50, ../sass/objects/_icons.scss */
+.icon-arrow-right:before {
+  content: "\e602";
+}
+
+/* line 53, ../sass/objects/_icons.scss */
+.icon-arrow-left:before {
+  content: "\e60a";
 }
 
 /*------------------------------------------*\
@@ -912,21 +917,27 @@ table {
 /* line 7, ../sass/objects/_carousel.scss */
 .carousel .carousel-wrapper {
   width: 6664px;
-  -webkit-animation: slide 20s;
+  position: relative;
+  -webkit-animation: slide 10s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
 }
-/* line 12, ../sass/objects/_carousel.scss */
+/* line 17, ../sass/objects/_carousel.scss */
 .carousel .wrapper-outer {
   width: 100%;
+  margin: 0 auto;
   position: relative;
   overflow: hidden;
 }
-/* line 17, ../sass/objects/_carousel.scss */
+/* line 23, ../sass/objects/_carousel.scss */
 .carousel .item {
   display: inline-block;
   width: 238px;
   margin: 3px;
 }
-/* line 22, ../sass/objects/_carousel.scss */
+/* line 28, ../sass/objects/_carousel.scss */
 .carousel .thumbnail {
   display: block;
   width: 200px;
@@ -939,21 +950,21 @@ table {
   border-radius: 4px;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
-/* line 36, ../sass/objects/_carousel.scss */
+/* line 42, ../sass/objects/_carousel.scss */
 .carousel-controls {
   text-align: center;
   margin-top: 1rem;
 }
-/* line 39, ../sass/objects/_carousel.scss */
+/* line 45, ../sass/objects/_carousel.scss */
 .carousel-controls .pag {
   display: inline-block;
   cursor: pointer;
 }
-/* line 43, ../sass/objects/_carousel.scss */
+/* line 49, ../sass/objects/_carousel.scss */
 .carousel-controls .pag span {
   display: block;
   width: 12px;
@@ -966,21 +977,52 @@ table {
   /* stops bg color from leaking outside the border: */
   background: #869791;
 }
-/* line 52, ../sass/objects/_carousel.scss */
+/* line 58, ../sass/objects/_carousel.scss */
 .carousel-controls .pag:hover span {
   background: #333;
 }
-/* line 56, ../sass/objects/_carousel.scss */
+/* line 62, ../sass/objects/_carousel.scss */
 .carousel-controls .active span {
   background: #333;
 }
 
+@-webkit-keyframes "slide" {
+  /* line 68, ../sass/objects/_carousel.scss */
+  100% {
+    left: 10px;
+  }
+
+  /* line 71, ../sass/objects/_carousel.scss */
+  15%, 30% {
+    left: -240px;
+  }
+
+  /* line 74, ../sass/objects/_carousel.scss */
+  35%, 50% {
+    left: -480px;
+  }
+
+  /* line 77, ../sass/objects/_carousel.scss */
+  55%, 70% {
+    left: -720px;
+  }
+
+  /* line 81, ../sass/objects/_carousel.scss */
+  75%, 90% {
+    left: -960px;
+  }
+
+  /* line 85, ../sass/objects/_carousel.scss */
+  93% {
+    left: 0;
+  }
+}
 /*------------------------------------------*\
     Footer
 \*------------------------------------------*/
 /* line 5, ../sass/objects/_footer.scss */
 .wrapper-footer {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.21);
   padding: 1.25em;
   width: 80%;
   margin: 2em auto 4em;
@@ -1008,7 +1050,7 @@ table {
 
 /* line 32, ../sass/objects/_footer.scss */
 .sub-footer {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.21);
   color: #fff;
   text-align: center;
   font-size: 15px;

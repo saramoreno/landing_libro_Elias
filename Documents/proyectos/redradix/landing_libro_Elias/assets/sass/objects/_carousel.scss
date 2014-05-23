@@ -6,11 +6,17 @@
   padding: 4em 0;
   .carousel-wrapper {
     width: 6664px;
-    -webkit-animation: slide 20s;
+    position: relative;
+    -webkit-animation: slide 10s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
   }
 
   .wrapper-outer {
     width: 100%;
+    margin: 0 auto;
     position: relative;
     overflow:hidden;
   }
@@ -28,8 +34,8 @@
     background-color: #fff;
     border: 1px solid #ddd;
     @include border-radius(4px);
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
   }
 }
 
@@ -55,5 +61,28 @@
   }
 .active span{
     background: #333; 
+    }
+  }
+
+  @-webkit-keyframes "slide" {
+    100% {
+      left:10px;
+    }
+    15%, 30% {
+      left: -240px;
+    }
+    35%, 50% {
+    left:-480px;
+    }
+    55%, 70% {
+      left: -720px;
+    }
+    
+    75%, 90% {
+     left: -960px;
+    }
+    
+    93% {
+     left: 0;
     }
   }
