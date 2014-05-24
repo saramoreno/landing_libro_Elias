@@ -17,11 +17,23 @@
 }
 
 
-.icon-next:before {
-  content: "\e608";
+.icon-chevron-left:before {
+  content: "\f053";
+}
+.icon-chevron-right:before {
+  content: "\f054";
+}
+.icon-quote-left:before {
+  content: "\f10d";
+}
+.icon-quote-right:before {
+  content: "\f10e";
 }
 .icon-envelope:before {
   content: "\e609";
+}
+.icon-next:before {
+  content: "\e608";
 }
 .icon-linkedin:before {
   content: "\e607";
@@ -47,10 +59,12 @@
 .icon-pencil:before {
   content: "\e604";
 }
+.icon-quotes-left:before {
+  content: "\e60a";
+}
 .icon-arrow-right:before {
   content: "\e602";
 }
 .icon-arrow-left:before {
-  content: "\e60a";
+  content: "\e60b";
 }
-

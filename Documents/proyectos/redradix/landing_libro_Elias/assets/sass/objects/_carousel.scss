@@ -7,15 +7,17 @@
   .carousel-wrapper {
     width: 6664px;
     position: relative;
-    -webkit-animation: slide 10s;
+    -webkit-animation: slide 20s;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
   }
 
   .wrapper-outer {
-    width: 100%;
+    width: 98%;
     margin: 0 auto;
     position: relative;
     overflow:hidden;
@@ -24,7 +26,10 @@
     display: inline-block;
     width: 238px;
     margin: 3px;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
   }
+
   .thumbnail{
     display: block;
     width: 200px;
@@ -34,8 +39,6 @@
     background-color: #fff;
     border: 1px solid #ddd;
     @include border-radius(4px);
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
   }
 }
 
@@ -62,11 +65,31 @@
 .active span{
     background: #333; 
     }
+
+    .controls {
+      color: #ccc;
+      @include font-size(20);
+
+      .prev {
+        position: relative; 
+        bottom: 9em;
+        right: 25em;
+      }
+
+      .next {
+        position: relative; 
+        bottom: 9em;
+        left: 25em;
+      }
+    }
   }
 
   @-webkit-keyframes "slide" {
     100% {
-      left:10px;
+      left: 0;
+    }
+    0% {
+      left: 0;
     }
     15%, 30% {
       left: -240px;
@@ -77,12 +100,10 @@
     55%, 70% {
       left: -720px;
     }
-    
     75%, 90% {
      left: -960px;
     }
-    
-    93% {
-     left: 0;
+    95% {
+      left:0;
     }
   }
