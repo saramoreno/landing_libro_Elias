@@ -118,73 +118,78 @@ section {
   padding: 5em 1.25em;
 }
 
+/* line 30, ../sass/base/_base.scss */
+img {
+  max-width: 100%;
+}
+
 /* Block Content */
-/* line 33, ../sass/base/_base.scss */
+/* line 37, ../sass/base/_base.scss */
 h1, h2, h2, h3, h4, h6 {
   font-size: 1em;
   font-weight: bold;
 }
 
-/* line 38, ../sass/base/_base.scss */
+/* line 42, ../sass/base/_base.scss */
 p {
   line-height: 1.3;
 }
 
 /* Inline Content */
-/* line 44, ../sass/base/_base.scss */
+/* line 48, ../sass/base/_base.scss */
 a {
   color: inherit;
   text-decoration: none;
 }
 
-/* line 49, ../sass/base/_base.scss */
+/* line 53, ../sass/base/_base.scss */
 p a {
   color: #e8f8f5;
 }
 
-/* line 53, ../sass/base/_base.scss */
+/* line 57, ../sass/base/_base.scss */
 .normal-p {
   font-size: 16px;
   font-size: 1.14286rem;
   font-weight: bold;
 }
 
-/* line 59, ../sass/base/_base.scss */
+/* line 63, ../sass/base/_base.scss */
 .centered {
   text-align: center;
 }
 
-/* line 62, ../sass/base/_base.scss */
+/* line 66, ../sass/base/_base.scss */
 .left-align {
   text-align: left;
 }
 
-/* line 65, ../sass/base/_base.scss */
+/* line 69, ../sass/base/_base.scss */
 .right-align {
   text-align: right;
 }
 
-/* line 70, ../sass/base/_base.scss */
+/* line 74, ../sass/base/_base.scss */
 .left {
   float: left;
 }
 
-/* line 73, ../sass/base/_base.scss */
+/* line 77, ../sass/base/_base.scss */
 .right {
   float: right;
 }
 
-/* line 76, ../sass/base/_base.scss */
+/* line 80, ../sass/base/_base.scss */
 .center {
   margin: 0 auto;
 }
 
-/* line 79, ../sass/base/_base.scss */
+/* line 83, ../sass/base/_base.scss */
 .no-float {
   float: none;
 }
 
-/* line 83, ../sass/base/_base.scss */
+/* line 87, ../sass/base/_base.scss */
 .inline-content {
   display: inline-block;
 }
@@ -321,51 +326,52 @@ h3, .gamma {
   max-width: 975px;
   margin: 0 auto;
 }
+@media screen and (max-width: 1050px) {
+  /* line 6, ../sass/base/_layout.scss */
+  .wrapper {
+    width: 100%;
+  }
+}
 
 /*------------------------------------*\
     $GRIDS
 \*------------------------------------*/
 /* Grid Container */
-/* line 18, ../sass/base/_layout.scss */
+/* line 22, ../sass/base/_layout.scss */
 .g {
   letter-spacing: -0.35em;
 }
-/* line 20, ../sass/base/_layout.scss */
+/* line 24, ../sass/base/_layout.scss */
 .g > * {
   letter-spacing: normal;
 }
 
 /* Grid Item */
-/* line 26, ../sass/base/_layout.scss */
+/* line 30, ../sass/base/_layout.scss */
 .gi {
   letter-spacing: normal;
 }
 @media only screen and (min-width: 50em) {
-  /* line 26, ../sass/base/_layout.scss */
+  /* line 30, ../sass/base/_layout.scss */
   .gi {
     display: inline-block;
     vertical-align: top;
   }
 }
 
-/* line 37, ../sass/base/_layout.scss */
+/* line 41, ../sass/base/_layout.scss */
 .mr {
   margin-right: 1%;
 }
 
-/* line 41, ../sass/base/_layout.scss */
+/* line 45, ../sass/base/_layout.scss */
 .ml {
   margin-left: 1%;
 }
 
-/* line 45, ../sass/base/_layout.scss */
+/* line 49, ../sass/base/_layout.scss */
 .half-width {
   width: 49%;
-}
-
-/* line 49, ../sass/base/_layout.scss */
-.forty-width {
-  width: 39%;
 }
 
 /* line 53, ../sass/base/_layout.scss */
@@ -374,8 +380,8 @@ h3, .gamma {
 }
 
 /* line 57, ../sass/base/_layout.scss */
-.sixty-width {
-  width: 59%;
+.forty-width {
+  width: 39%;
 }
 
 /* line 61, ../sass/base/_layout.scss */
@@ -384,11 +390,16 @@ h3, .gamma {
 }
 
 /* line 65, ../sass/base/_layout.scss */
+.sixty-width {
+  width: 59%;
+}
+
+/* line 69, ../sass/base/_layout.scss */
 .onethird-width {
   width: 32.33%;
 }
 
-/* line 69, ../sass/base/_layout.scss */
+/* line 73, ../sass/base/_layout.scss */
 .eighty-width {
   width: 79%;
 }
@@ -625,9 +636,23 @@ table {
   display: inline-block;
   vertical-align: top;
   color: #fff;
-  margin-left: 1.25em;
+  padding-left: 1.25em;
 }
-/* line 16, ../sass/objects/_hero.scss */
+@media screen and (max-width: 800px) {
+  /* line 10, ../sass/objects/_hero.scss */
+  .hero .complementary-text {
+    display: block;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1050px) {
+  /* line 21, ../sass/objects/_hero.scss */
+  .hero .complementary-text .normal-heading, .hero .complementary-text .big-heading {
+    font-size: 26px;
+    font-size: 1.85714rem;
+  }
+}
+/* line 27, ../sass/objects/_hero.scss */
 .hero .complementary-text p {
   font-size: 16px;
   font-size: 1.14286rem;
@@ -636,22 +661,47 @@ table {
   font-weight: 300;
   margin-bottom: .625em;
 }
-/* line 25, ../sass/objects/_hero.scss */
-.hero figure {
+@media screen and (max-width: 1050px) {
+  /* line 27, ../sass/objects/_hero.scss */
+  .hero .complementary-text p {
+    font-size: 15px;
+    font-size: 1.07143rem;
+  }
+}
+
+/* line 41, ../sass/objects/_hero.scss */
+figure {
+  margin: 0;
+  padding: 0;
   display: inline-block;
   vertical-align: top;
+  width: 50%;
 }
-/* line 30, ../sass/objects/_hero.scss */
-.hero .buy {
+@media screen and (max-width: 800px) {
+  /* line 41, ../sass/objects/_hero.scss */
+  figure {
+    display: block;
+    margin: 0 auto;
+  }
+}
+/* line 52, ../sass/objects/_hero.scss */
+figure img {
+  width: 100%;
+  display: inline-block;
+}
+
+/* line 58, ../sass/objects/_hero.scss */
+.buy {
   margin-top: 1em;
 }
-/* line 34, ../sass/objects/_hero.scss */
-.hero .privacy {
+
+/* line 62, ../sass/objects/_hero.scss */
+.privacy {
   text-align: center;
   margin-top: .625em;
 }
-/* line 38, ../sass/objects/_hero.scss */
-.hero .privacy a:hover {
+/* line 66, ../sass/objects/_hero.scss */
+.privacy a:hover {
   text-decoration: underline;
   color: #428bca;
 }
@@ -669,29 +719,37 @@ table {
   border-radius: 3px;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
-  padding: 2em;
+  padding: 2em 1em;
   text-align: center;
   margin: 1.5em 0;
 }
-/* line 15, ../sass/objects/_buttons.scss */
+@media screen and (max-width: 875px) {
+  /* line 5, ../sass/objects/_buttons.scss */
+  .box-btn {
+    display: block;
+    width: 100%;
+    padding: 1em;
+  }
+}
+/* line 21, ../sass/objects/_buttons.scss */
 .box-btn:first-child {
   margin-right: 5%;
 }
-/* line 19, ../sass/objects/_buttons.scss */
+/* line 25, ../sass/objects/_buttons.scss */
 .box-btn:hover {
   opacity: .85;
 }
-/* line 23, ../sass/objects/_buttons.scss */
+/* line 29, ../sass/objects/_buttons.scss */
 .box-btn h3 {
   padding-bottom: .625em;
 }
-/* line 27, ../sass/objects/_buttons.scss */
+/* line 33, ../sass/objects/_buttons.scss */
 .box-btn p {
   font-size: 14px;
   font-size: 1rem;
 }
 
-/* line 32, ../sass/objects/_buttons.scss */
+/* line 38, ../sass/objects/_buttons.scss */
 .btn {
   display: block;
   background: #2ecc71;
@@ -713,7 +771,7 @@ table {
   -moz-transition: all 0.5s;
   -webkit-transition: all 0.5s;
 }
-/* line 49, ../sass/objects/_buttons.scss */
+/* line 55, ../sass/objects/_buttons.scss */
 .btn:hover {
   background: #29b765;
   border-bottom: 5px solid #25a25a;
@@ -842,18 +900,29 @@ table {
   text-align: center;
   margin: 4em 0;
 }
-/* line 16, ../sass/objects/_sections.scss */
+/* line 15, ../sass/objects/_sections.scss */
+.author figure img {
+  border: 1px solid #ccc;
+  padding: .5em;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  width: 400px;
+  height: 500px;
+}
+/* line 24, ../sass/objects/_sections.scss */
 .author h3, .author p {
   text-align: center;
   padding-bottom: 2em;
   font-weight: bold;
 }
 
-/* line 24, ../sass/objects/_sections.scss */
+/* line 32, ../sass/objects/_sections.scss */
 .reviews {
   background-color: #e8f8f5;
 }
-/* line 27, ../sass/objects/_sections.scss */
+/* line 35, ../sass/objects/_sections.scss */
 .reviews .reviews-quote {
   position: relative;
   right: 1em;
@@ -863,11 +932,11 @@ table {
   line-height: 70px;
   color: #ccc;
 }
-/* line 36, ../sass/objects/_sections.scss */
+/* line 44, ../sass/objects/_sections.scss */
 .reviews p {
   padding-left: 2em;
 }
-/* line 40, ../sass/objects/_sections.scss */
+/* line 48, ../sass/objects/_sections.scss */
 .reviews .info-user {
   text-align: center;
   color: #428bca;
@@ -875,7 +944,7 @@ table {
   font-size: 1.14286rem;
   margin-top: .5em;
 }
-/* line 46, ../sass/objects/_sections.scss */
+/* line 54, ../sass/objects/_sections.scss */
 .reviews .info-user a:hover {
   text-decoration: underline;
 }

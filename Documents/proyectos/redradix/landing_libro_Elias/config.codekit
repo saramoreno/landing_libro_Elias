@@ -112,6 +112,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/elias-2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 229126,
+		"inputAbbreviatedPath": "\/assets\/images\/elias-2.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/elias-2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/elias.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 14339,
+		"inputAbbreviatedPath": "\/assets\/images\/elias.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/elias.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/list-1.png": {
 		"fileType": 32768,
 		"ignore": 0,

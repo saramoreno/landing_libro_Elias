@@ -11,7 +11,18 @@
     display: inline-block;
     vertical-align: top;
     color: #fff;
-    margin-left: 1.25em;
+    padding-left: 1.25em;
+
+    @media screen and (max-width: 800px) {
+      display: block;
+      width: 100%;
+    }
+
+    .normal-heading {
+      @media screen and (max-width: 1050px) {
+      @include font-size(26);
+     }
+   }
 
     p {
       @include font-size(16);
@@ -19,12 +30,29 @@
       font-family: "lato", sans-serif;
       font-weight: 300;
       margin-bottom: .625em;
+
+      @media screen and (max-width: 1050px) {
+        @include font-size(15);
+       }
+      }
     }
   }
 
   figure {
+    margin: 0;
+    padding: 0;
     display: inline-block;
     vertical-align: top;
+    width: 50%;
+
+    @media screen and (max-width: 800px) {
+      display: block;
+      margin: 0 auto;
+    }
+    img {
+      width: 100%;
+      display: inline-block;
+    }
   }
 
   .buy {
@@ -40,5 +68,3 @@
       color: #428bca;
     }
   }
-
-}

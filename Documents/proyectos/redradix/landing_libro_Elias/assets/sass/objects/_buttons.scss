@@ -8,9 +8,15 @@
   vertical-align: top;
   background: rgba(0, 0, 0, .2);
   @include border-radius(3px);
-  padding: 2em;
+  padding: 2em 1em;
   text-align: center;
   margin: 1.5em 0;
+
+  @media screen and (max-width: 875px) {
+    display: block;
+    width: 100%;
+    padding: 1em;
+  }
 
   &:first-child {
     margin-right: 5%;
