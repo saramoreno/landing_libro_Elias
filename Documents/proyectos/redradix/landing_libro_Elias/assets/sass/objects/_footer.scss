@@ -4,18 +4,38 @@
 
 .wrapper-footer {
   background: rgba(0, 0, 0, .21);
-  padding: 1.25em;
+  padding: 2em 1.25em;
   width: 80%;
   margin: 2em auto 4em;
 
+  @media screen and (max-width: 1050px){
+    width: 100%;
+  }
+
   figure {
-    width: 227px;
-    height: 297px;
+    width: 30%;
+    margin-top: 2em;
+
+    @media screen and (max-width: 940px) {
+      display: block;
+      width: 40%;
+      margin: 0 auto;
+    }
+
+    @media screen and (max-width: 640px) {
+      width: 50%;
+    }
   }
 
   .complementary-text {
     width: 60%;
     margin-left: 4em;
+
+    @media screen and (max-width: 940px) {
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+    }
 
     h3 {
       text-align: center;
@@ -25,6 +45,21 @@
     .small {
       text-align: center;
       padding-top: .5em;
+    }
+
+    .pricing-btns {
+      @media screen and (max-width: 1090px) {
+        width: 80%;
+        margin: 2em auto;
+      }
+
+    .box-btn {
+      @media screen and (max-width: 1090px) {
+        display: block;
+        width: 100%;
+    
+      }
+      }
     }
   }
 }

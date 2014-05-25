@@ -638,7 +638,7 @@ table {
   color: #fff;
   padding-left: 1.25em;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   /* line 10, ../sass/objects/_hero.scss */
   .hero .complementary-text {
     display: block;
@@ -652,7 +652,14 @@ table {
     font-size: 1.85714rem;
   }
 }
-/* line 27, ../sass/objects/_hero.scss */
+@media screen and (max-width: 850px) {
+  /* line 21, ../sass/objects/_hero.scss */
+  .hero .complementary-text .normal-heading, .hero .complementary-text .big-heading {
+    font-size: 32px;
+    font-size: 2.28571rem;
+  }
+}
+/* line 30, ../sass/objects/_hero.scss */
 .hero .complementary-text p {
   font-size: 16px;
   font-size: 1.14286rem;
@@ -662,14 +669,14 @@ table {
   margin-bottom: .625em;
 }
 @media screen and (max-width: 1050px) {
-  /* line 27, ../sass/objects/_hero.scss */
+  /* line 30, ../sass/objects/_hero.scss */
   .hero .complementary-text p {
     font-size: 15px;
     font-size: 1.07143rem;
   }
 }
 
-/* line 41, ../sass/objects/_hero.scss */
+/* line 44, ../sass/objects/_hero.scss */
 figure {
   margin: 0;
   padding: 0;
@@ -677,30 +684,30 @@ figure {
   vertical-align: top;
   width: 50%;
 }
-@media screen and (max-width: 800px) {
-  /* line 41, ../sass/objects/_hero.scss */
+@media screen and (max-width: 850px) {
+  /* line 44, ../sass/objects/_hero.scss */
   figure {
     display: block;
     margin: 0 auto;
   }
 }
-/* line 52, ../sass/objects/_hero.scss */
+/* line 55, ../sass/objects/_hero.scss */
 figure img {
   width: 100%;
   display: inline-block;
 }
 
-/* line 58, ../sass/objects/_hero.scss */
+/* line 61, ../sass/objects/_hero.scss */
 .buy {
   margin-top: 1em;
 }
 
-/* line 62, ../sass/objects/_hero.scss */
+/* line 65, ../sass/objects/_hero.scss */
 .privacy {
   text-align: center;
   margin-top: .625em;
 }
-/* line 66, ../sass/objects/_hero.scss */
+/* line 69, ../sass/objects/_hero.scss */
 .privacy a:hover {
   text-decoration: underline;
   color: #428bca;
@@ -709,7 +716,15 @@ figure img {
 /*------------------------------------------*\
     Buttons
 \*------------------------------------------*/
-/* line 5, ../sass/objects/_buttons.scss */
+@media screen and (max-width: 875px) {
+  /* line 5, ../sass/objects/_buttons.scss */
+  .pricing-btns {
+    margin: 2em auto;
+    width: 80%;
+  }
+}
+
+/* line 12, ../sass/objects/_buttons.scss */
 .box-btn {
   display: inline-block;
   width: 45%;
@@ -724,38 +739,38 @@ figure img {
   margin: 1.5em 0;
 }
 @media screen and (max-width: 875px) {
-  /* line 5, ../sass/objects/_buttons.scss */
+  /* line 12, ../sass/objects/_buttons.scss */
   .box-btn {
     display: block;
-    width: 100%;
     padding: 1em;
+    width: 100%;
   }
 }
-/* line 21, ../sass/objects/_buttons.scss */
+/* line 28, ../sass/objects/_buttons.scss */
 .box-btn:first-child {
   margin-right: 5%;
 }
-/* line 25, ../sass/objects/_buttons.scss */
+/* line 32, ../sass/objects/_buttons.scss */
 .box-btn:hover {
   opacity: .85;
 }
-/* line 29, ../sass/objects/_buttons.scss */
+/* line 36, ../sass/objects/_buttons.scss */
 .box-btn h3 {
   padding-bottom: .625em;
 }
-/* line 33, ../sass/objects/_buttons.scss */
+/* line 40, ../sass/objects/_buttons.scss */
 .box-btn p {
   font-size: 14px;
   font-size: 1rem;
 }
 
-/* line 38, ../sass/objects/_buttons.scss */
+/* line 45, ../sass/objects/_buttons.scss */
 .btn {
   display: block;
   background: #2ecc71;
   color: #fff;
   text-align: center;
-  width: 350px;
+  width: 80%;
   padding: .625em;
   margin: 0 auto;
   border-bottom: 5px solid #25a25a;
@@ -771,7 +786,7 @@ figure img {
   -moz-transition: all 0.5s;
   -webkit-transition: all 0.5s;
 }
-/* line 55, ../sass/objects/_buttons.scss */
+/* line 62, ../sass/objects/_buttons.scss */
 .btn:hover {
   background: #29b765;
   border-bottom: 5px solid #25a25a;
@@ -899,8 +914,9 @@ figure img {
 .author figure {
   text-align: center;
   margin: 4em 0;
+  width: 100%;
 }
-/* line 15, ../sass/objects/_sections.scss */
+/* line 16, ../sass/objects/_sections.scss */
 .author figure img {
   border: 1px solid #ccc;
   padding: .5em;
@@ -911,32 +927,39 @@ figure img {
   width: 400px;
   height: 500px;
 }
-/* line 24, ../sass/objects/_sections.scss */
+@media screen and (max-width: 650px) {
+  /* line 16, ../sass/objects/_sections.scss */
+  .author figure img {
+    width: 300px;
+    height: 375px;
+  }
+}
+/* line 30, ../sass/objects/_sections.scss */
 .author h3, .author p {
   text-align: center;
   padding-bottom: 2em;
   font-weight: bold;
 }
 
-/* line 32, ../sass/objects/_sections.scss */
+/* line 38, ../sass/objects/_sections.scss */
 .reviews {
   background-color: #e8f8f5;
 }
-/* line 35, ../sass/objects/_sections.scss */
+/* line 41, ../sass/objects/_sections.scss */
 .reviews .reviews-quote {
   position: relative;
-  right: 1em;
+  right: .5em;
   top: 0;
   font-size: 40px;
   font-size: 2.85714rem;
   line-height: 70px;
   color: #ccc;
 }
-/* line 44, ../sass/objects/_sections.scss */
+/* line 50, ../sass/objects/_sections.scss */
 .reviews p {
   padding-left: 2em;
 }
-/* line 48, ../sass/objects/_sections.scss */
+/* line 54, ../sass/objects/_sections.scss */
 .reviews .info-user {
   text-align: center;
   color: #428bca;
@@ -944,7 +967,7 @@ figure img {
   font-size: 1.14286rem;
   margin-top: .5em;
 }
-/* line 54, ../sass/objects/_sections.scss */
+/* line 60, ../sass/objects/_sections.scss */
 .reviews .info-user a:hover {
   text-decoration: underline;
 }
@@ -963,40 +986,52 @@ figure img {
   vertical-align: top;
   padding: 2em 1.5em 2em 4.4em;
 }
-/* line 13, ../sass/objects/_icon-list.scss */
+@media screen and (max-width: 850px) {
+  /* line 7, ../sass/objects/_icon-list.scss */
+  .icon-list li {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 650px) {
+  /* line 7, ../sass/objects/_icon-list.scss */
+  .icon-list li {
+    width: 100%;
+  }
+}
+/* line 21, ../sass/objects/_icon-list.scss */
 .icon-list li h3 {
   padding-bottom: .625em;
   font-size: 24px;
   font-size: 1.71429rem;
   font-weight: 400;
 }
-/* line 19, ../sass/objects/_icon-list.scss */
+/* line 27, ../sass/objects/_icon-list.scss */
 .icon-list li p {
   font-size: 16px;
   font-size: 1.14286rem;
   line-height: 1.428571429;
 }
-/* line 25, ../sass/objects/_icon-list.scss */
+/* line 33, ../sass/objects/_icon-list.scss */
 .icon-list .list-1 {
   background: url(../images/list-1.png) no-repeat 0 20%;
 }
-/* line 28, ../sass/objects/_icon-list.scss */
+/* line 36, ../sass/objects/_icon-list.scss */
 .icon-list .list-2 {
   background: url(../images/list-2.png) no-repeat 0 20%;
 }
-/* line 31, ../sass/objects/_icon-list.scss */
+/* line 39, ../sass/objects/_icon-list.scss */
 .icon-list .list-3 {
   background: url(../images/list-3.png) no-repeat 0 20%;
 }
-/* line 34, ../sass/objects/_icon-list.scss */
+/* line 42, ../sass/objects/_icon-list.scss */
 .icon-list .list-4 {
   background: url(../images/list-4.png) no-repeat 0 20%;
 }
-/* line 37, ../sass/objects/_icon-list.scss */
+/* line 45, ../sass/objects/_icon-list.scss */
 .icon-list .list-5 {
   background: url(../images/list-5.png) no-repeat 0 20%;
 }
-/* line 40, ../sass/objects/_icon-list.scss */
+/* line 48, ../sass/objects/_icon-list.scss */
 .icon-list .list-6 {
   background: url(../images/list-6.png) no-repeat 0 20%;
 }
@@ -1031,14 +1066,20 @@ figure img {
 .carousel .item {
   display: inline-block;
   width: 238px;
-  margin: 3px;
+  margin: .1875em;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
-/* line 33, ../sass/objects/_carousel.scss */
+@media screen and (max-width: 1090px) {
+  /* line 25, ../sass/objects/_carousel.scss */
+  .carousel .item {
+    margin: .15em;
+  }
+}
+/* line 37, ../sass/objects/_carousel.scss */
 .carousel .thumbnail {
   display: block;
-  width: 200px;
+  width: 80%;
   height: auto;
   max-width: 100%;
   padding: 4px;
@@ -1049,18 +1090,24 @@ figure img {
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
 }
+@media screen and (max-width: 1090px) {
+  /* line 37, ../sass/objects/_carousel.scss */
+  .carousel .thumbnail {
+    width: 75%;
+  }
+}
 
-/* line 45, ../sass/objects/_carousel.scss */
+/* line 53, ../sass/objects/_carousel.scss */
 .carousel-controls {
   text-align: center;
   margin-top: 1rem;
 }
-/* line 48, ../sass/objects/_carousel.scss */
+/* line 56, ../sass/objects/_carousel.scss */
 .carousel-controls .pag {
   display: inline-block;
   cursor: pointer;
 }
-/* line 52, ../sass/objects/_carousel.scss */
+/* line 60, ../sass/objects/_carousel.scss */
 .carousel-controls .pag span {
   display: block;
   width: 12px;
@@ -1073,65 +1120,81 @@ figure img {
   /* stops bg color from leaking outside the border: */
   background: #869791;
 }
-/* line 61, ../sass/objects/_carousel.scss */
+/* line 69, ../sass/objects/_carousel.scss */
 .carousel-controls .pag:hover span {
   background: #333;
 }
-/* line 65, ../sass/objects/_carousel.scss */
+/* line 73, ../sass/objects/_carousel.scss */
 .carousel-controls .active span {
   background: #333;
 }
-/* line 69, ../sass/objects/_carousel.scss */
+/* line 77, ../sass/objects/_carousel.scss */
 .carousel-controls .controls {
   color: #ccc;
   font-size: 20px;
   font-size: 1.42857rem;
 }
-/* line 73, ../sass/objects/_carousel.scss */
+/* line 81, ../sass/objects/_carousel.scss */
 .carousel-controls .controls .prev {
   position: relative;
   bottom: 9em;
   right: 25em;
 }
-/* line 79, ../sass/objects/_carousel.scss */
+@media screen and (max-width: 1150px) {
+  /* line 81, ../sass/objects/_carousel.scss */
+  .carousel-controls .controls .prev {
+    position: relative;
+    bottom: 0;
+    right: 0;
+  }
+}
+/* line 93, ../sass/objects/_carousel.scss */
 .carousel-controls .controls .next {
   position: relative;
   bottom: 9em;
   left: 25em;
 }
+@media screen and (max-width: 1150px) {
+  /* line 93, ../sass/objects/_carousel.scss */
+  .carousel-controls .controls .next {
+    position: relative;
+    bottom: 0;
+    left: .5em;
+  }
+}
 
 @-webkit-keyframes "slide" {
-  /* line 88, ../sass/objects/_carousel.scss */
+  /* line 108, ../sass/objects/_carousel.scss */
   100% {
     left: 0;
   }
 
-  /* line 91, ../sass/objects/_carousel.scss */
+  /* line 111, ../sass/objects/_carousel.scss */
   0% {
     left: 0;
   }
 
-  /* line 94, ../sass/objects/_carousel.scss */
+  /* line 114, ../sass/objects/_carousel.scss */
   15%, 30% {
     left: -240px;
   }
 
-  /* line 97, ../sass/objects/_carousel.scss */
+  /* line 117, ../sass/objects/_carousel.scss */
   35%, 50% {
     left: -480px;
   }
 
-  /* line 100, ../sass/objects/_carousel.scss */
+  /* line 120, ../sass/objects/_carousel.scss */
   55%, 70% {
     left: -720px;
   }
 
-  /* line 103, ../sass/objects/_carousel.scss */
+  /* line 123, ../sass/objects/_carousel.scss */
   75%, 90% {
     left: -960px;
   }
 
-  /* line 106, ../sass/objects/_carousel.scss */
+  /* line 126, ../sass/objects/_carousel.scss */
   95% {
     left: 0;
   }
@@ -1142,32 +1205,74 @@ figure img {
 /* line 5, ../sass/objects/_footer.scss */
 .wrapper-footer {
   background: rgba(0, 0, 0, 0.21);
-  padding: 1.25em;
+  padding: 2em 1.25em;
   width: 80%;
   margin: 2em auto 4em;
 }
-/* line 11, ../sass/objects/_footer.scss */
-.wrapper-footer figure {
-  width: 227px;
-  height: 297px;
+@media screen and (max-width: 1050px) {
+  /* line 5, ../sass/objects/_footer.scss */
+  .wrapper-footer {
+    width: 100%;
+  }
 }
-/* line 16, ../sass/objects/_footer.scss */
+/* line 15, ../sass/objects/_footer.scss */
+.wrapper-footer figure {
+  width: 30%;
+  margin-top: 2em;
+}
+@media screen and (max-width: 940px) {
+  /* line 15, ../sass/objects/_footer.scss */
+  .wrapper-footer figure {
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 640px) {
+  /* line 15, ../sass/objects/_footer.scss */
+  .wrapper-footer figure {
+    width: 50%;
+  }
+}
+/* line 30, ../sass/objects/_footer.scss */
 .wrapper-footer .complementary-text {
   width: 60%;
   margin-left: 4em;
 }
-/* line 20, ../sass/objects/_footer.scss */
+@media screen and (max-width: 940px) {
+  /* line 30, ../sass/objects/_footer.scss */
+  .wrapper-footer .complementary-text {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+/* line 40, ../sass/objects/_footer.scss */
 .wrapper-footer .complementary-text h3 {
   text-align: center;
   padding: 1em 0;
 }
-/* line 25, ../sass/objects/_footer.scss */
+/* line 45, ../sass/objects/_footer.scss */
 .wrapper-footer .complementary-text .small {
   text-align: center;
   padding-top: .5em;
 }
+@media screen and (max-width: 1090px) {
+  /* line 50, ../sass/objects/_footer.scss */
+  .wrapper-footer .complementary-text .pricing-btns {
+    width: 80%;
+    margin: 2em auto;
+  }
+}
+@media screen and (max-width: 1090px) {
+  /* line 56, ../sass/objects/_footer.scss */
+  .wrapper-footer .complementary-text .pricing-btns .box-btn {
+    display: block;
+    width: 100%;
+  }
+}
 
-/* line 32, ../sass/objects/_footer.scss */
+/* line 67, ../sass/objects/_footer.scss */
 .sub-footer {
   background: rgba(0, 0, 0, 0.21);
   color: #fff;
