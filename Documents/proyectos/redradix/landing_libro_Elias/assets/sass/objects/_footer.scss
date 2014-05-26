@@ -35,11 +35,13 @@
       display: block;
       width: 100%;
       margin: 0 auto;
+      padding-left: 0;
     }
 
     h3 {
       text-align: center;
       padding: 1em 0;
+      font-weight: 300;
     }
 
     .small {
@@ -54,10 +56,17 @@
       }
 
     .box-btn {
+      padding: 1.25em;
       @media screen and (max-width: 1090px) {
         display: block;
         width: 100%;
-    
+      }
+      h3 {
+        @include font-size(16);
+      }
+
+      p {
+        @include font-size(14);
       }
       }
     }

@@ -30,7 +30,10 @@
   h3, p {
     text-align: center;
     padding-bottom: 2em;
-    font-weight: bold;
+  }
+
+  p {
+    font-weight: 300;
   }
 
 }
@@ -49,6 +52,11 @@
 
    p {
     padding-left: 2em;
+    font-weight: 300;
+   }
+
+   a {
+    font-weight: 300;
    }
 
    .info-user {

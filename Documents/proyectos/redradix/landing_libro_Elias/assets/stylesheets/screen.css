@@ -154,42 +154,47 @@ p a {
   font-weight: bold;
 }
 
-/* line 63, ../sass/base/_base.scss */
+/* line 62, ../sass/base/_base.scss */
+.small {
+  font-weight: 300;
+}
+
+/* line 67, ../sass/base/_base.scss */
 .centered {
   text-align: center;
 }
 
-/* line 66, ../sass/base/_base.scss */
+/* line 70, ../sass/base/_base.scss */
 .left-align {
   text-align: left;
 }
 
-/* line 69, ../sass/base/_base.scss */
+/* line 73, ../sass/base/_base.scss */
 .right-align {
   text-align: right;
 }
 
-/* line 74, ../sass/base/_base.scss */
+/* line 78, ../sass/base/_base.scss */
 .left {
   float: left;
 }
 
-/* line 77, ../sass/base/_base.scss */
+/* line 81, ../sass/base/_base.scss */
 .right {
   float: right;
 }
 
-/* line 80, ../sass/base/_base.scss */
+/* line 84, ../sass/base/_base.scss */
 .center {
   margin: 0 auto;
 }
 
-/* line 83, ../sass/base/_base.scss */
+/* line 87, ../sass/base/_base.scss */
 .no-float {
   float: none;
 }
 
-/* line 87, ../sass/base/_base.scss */
+/* line 91, ../sass/base/_base.scss */
 .inline-content {
   display: inline-block;
 }
@@ -643,40 +648,58 @@ table {
   .hero .complementary-text {
     display: block;
     width: 100%;
+    padding-left: 0;
+  }
+}
+/* line 22, ../sass/objects/_hero.scss */
+.hero .complementary-text h1 {
+  margin-top: .3em;
+}
+@media screen and (max-width: 1050px) {
+  /* line 22, ../sass/objects/_hero.scss */
+  .hero .complementary-text h1 {
+    font-size: 32px;
+    font-size: 2.28571rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  /* line 22, ../sass/objects/_hero.scss */
+  .hero .complementary-text h1 {
+    font-size: 34px;
+    font-size: 2.42857rem;
   }
 }
 @media screen and (max-width: 1050px) {
-  /* line 21, ../sass/objects/_hero.scss */
-  .hero .complementary-text .normal-heading, .hero .complementary-text .big-heading {
+  /* line 33, ../sass/objects/_hero.scss */
+  .hero .complementary-text h4 {
     font-size: 26px;
     font-size: 1.85714rem;
   }
 }
 @media screen and (max-width: 850px) {
-  /* line 21, ../sass/objects/_hero.scss */
-  .hero .complementary-text .normal-heading, .hero .complementary-text .big-heading {
-    font-size: 32px;
-    font-size: 2.28571rem;
+  /* line 33, ../sass/objects/_hero.scss */
+  .hero .complementary-text h4 {
+    font-size: 28px;
+    font-size: 2rem;
   }
 }
-/* line 30, ../sass/objects/_hero.scss */
+/* line 42, ../sass/objects/_hero.scss */
 .hero .complementary-text p {
   font-size: 16px;
   font-size: 1.14286rem;
   text-align: center;
-  font-family: "lato", sans-serif;
   font-weight: 300;
   margin-bottom: .625em;
 }
 @media screen and (max-width: 1050px) {
-  /* line 30, ../sass/objects/_hero.scss */
+  /* line 42, ../sass/objects/_hero.scss */
   .hero .complementary-text p {
     font-size: 15px;
     font-size: 1.07143rem;
   }
 }
 
-/* line 44, ../sass/objects/_hero.scss */
+/* line 55, ../sass/objects/_hero.scss */
 figure {
   margin: 0;
   padding: 0;
@@ -685,29 +708,29 @@ figure {
   width: 50%;
 }
 @media screen and (max-width: 850px) {
-  /* line 44, ../sass/objects/_hero.scss */
+  /* line 55, ../sass/objects/_hero.scss */
   figure {
     display: block;
     margin: 0 auto;
   }
 }
-/* line 55, ../sass/objects/_hero.scss */
+/* line 66, ../sass/objects/_hero.scss */
 figure img {
   width: 100%;
   display: inline-block;
 }
 
-/* line 61, ../sass/objects/_hero.scss */
+/* line 72, ../sass/objects/_hero.scss */
 .buy {
   margin-top: 1em;
 }
 
-/* line 65, ../sass/objects/_hero.scss */
+/* line 76, ../sass/objects/_hero.scss */
 .privacy {
   text-align: center;
   margin-top: .625em;
 }
-/* line 69, ../sass/objects/_hero.scss */
+/* line 80, ../sass/objects/_hero.scss */
 .privacy a:hover {
   text-decoration: underline;
   color: #428bca;
@@ -759,12 +782,13 @@ figure img {
   padding-bottom: .625em;
 }
 /* line 40, ../sass/objects/_buttons.scss */
-.box-btn p {
-  font-size: 14px;
-  font-size: 1rem;
+.box-btn span {
+  font-size: 13px;
+  font-size: 0.92857rem;
+  font-weight: 300;
 }
 
-/* line 45, ../sass/objects/_buttons.scss */
+/* line 46, ../sass/objects/_buttons.scss */
 .btn {
   display: block;
   background: #2ecc71;
@@ -785,8 +809,9 @@ figure img {
   transition: all 0.5s;
   -moz-transition: all 0.5s;
   -webkit-transition: all 0.5s;
+  font-weight: 300;
 }
-/* line 62, ../sass/objects/_buttons.scss */
+/* line 64, ../sass/objects/_buttons.scss */
 .btn:hover {
   background: #29b765;
   border-bottom: 5px solid #25a25a;
@@ -938,14 +963,17 @@ figure img {
 .author h3, .author p {
   text-align: center;
   padding-bottom: 2em;
-  font-weight: bold;
+}
+/* line 35, ../sass/objects/_sections.scss */
+.author p {
+  font-weight: 300;
 }
 
-/* line 38, ../sass/objects/_sections.scss */
+/* line 41, ../sass/objects/_sections.scss */
 .reviews {
   background-color: #e8f8f5;
 }
-/* line 41, ../sass/objects/_sections.scss */
+/* line 44, ../sass/objects/_sections.scss */
 .reviews .reviews-quote {
   position: relative;
   right: .5em;
@@ -955,11 +983,16 @@ figure img {
   line-height: 70px;
   color: #ccc;
 }
-/* line 50, ../sass/objects/_sections.scss */
+/* line 53, ../sass/objects/_sections.scss */
 .reviews p {
   padding-left: 2em;
+  font-weight: 300;
 }
-/* line 54, ../sass/objects/_sections.scss */
+/* line 58, ../sass/objects/_sections.scss */
+.reviews a {
+  font-weight: 300;
+}
+/* line 62, ../sass/objects/_sections.scss */
 .reviews .info-user {
   text-align: center;
   color: #428bca;
@@ -967,7 +1000,7 @@ figure img {
   font-size: 1.14286rem;
   margin-top: .5em;
 }
-/* line 60, ../sass/objects/_sections.scss */
+/* line 68, ../sass/objects/_sections.scss */
 .reviews .info-user a:hover {
   text-decoration: underline;
 }
@@ -985,6 +1018,7 @@ figure img {
   display: inline-block;
   vertical-align: top;
   padding: 2em 1.5em 2em 4.4em;
+  font-family: "Lato", sans-serif;
 }
 @media screen and (max-width: 850px) {
   /* line 7, ../sass/objects/_icon-list.scss */
@@ -998,40 +1032,41 @@ figure img {
     width: 100%;
   }
 }
-/* line 21, ../sass/objects/_icon-list.scss */
+/* line 22, ../sass/objects/_icon-list.scss */
 .icon-list li h3 {
   padding-bottom: .625em;
   font-size: 24px;
   font-size: 1.71429rem;
-  font-weight: 400;
+  font-weight: 700;
 }
-/* line 27, ../sass/objects/_icon-list.scss */
+/* line 28, ../sass/objects/_icon-list.scss */
 .icon-list li p {
   font-size: 16px;
   font-size: 1.14286rem;
   line-height: 1.428571429;
+  font-weight: 400;
 }
-/* line 33, ../sass/objects/_icon-list.scss */
+/* line 35, ../sass/objects/_icon-list.scss */
 .icon-list .list-1 {
   background: url(../images/list-1.png) no-repeat 0 20%;
 }
-/* line 36, ../sass/objects/_icon-list.scss */
+/* line 38, ../sass/objects/_icon-list.scss */
 .icon-list .list-2 {
   background: url(../images/list-2.png) no-repeat 0 20%;
 }
-/* line 39, ../sass/objects/_icon-list.scss */
+/* line 41, ../sass/objects/_icon-list.scss */
 .icon-list .list-3 {
   background: url(../images/list-3.png) no-repeat 0 20%;
 }
-/* line 42, ../sass/objects/_icon-list.scss */
+/* line 44, ../sass/objects/_icon-list.scss */
 .icon-list .list-4 {
   background: url(../images/list-4.png) no-repeat 0 20%;
 }
-/* line 45, ../sass/objects/_icon-list.scss */
+/* line 47, ../sass/objects/_icon-list.scss */
 .icon-list .list-5 {
   background: url(../images/list-5.png) no-repeat 0 20%;
 }
-/* line 48, ../sass/objects/_icon-list.scss */
+/* line 50, ../sass/objects/_icon-list.scss */
 .icon-list .list-6 {
   background: url(../images/list-6.png) no-repeat 0 20%;
 }
@@ -1245,34 +1280,50 @@ figure img {
     display: block;
     width: 100%;
     margin: 0 auto;
+    padding-left: 0;
   }
 }
-/* line 40, ../sass/objects/_footer.scss */
+/* line 41, ../sass/objects/_footer.scss */
 .wrapper-footer .complementary-text h3 {
   text-align: center;
   padding: 1em 0;
+  font-weight: 300;
 }
-/* line 45, ../sass/objects/_footer.scss */
+/* line 47, ../sass/objects/_footer.scss */
 .wrapper-footer .complementary-text .small {
   text-align: center;
   padding-top: .5em;
 }
 @media screen and (max-width: 1090px) {
-  /* line 50, ../sass/objects/_footer.scss */
+  /* line 52, ../sass/objects/_footer.scss */
   .wrapper-footer .complementary-text .pricing-btns {
     width: 80%;
     margin: 2em auto;
   }
 }
+/* line 58, ../sass/objects/_footer.scss */
+.wrapper-footer .complementary-text .pricing-btns .box-btn {
+  padding: 1.25em;
+}
 @media screen and (max-width: 1090px) {
-  /* line 56, ../sass/objects/_footer.scss */
+  /* line 58, ../sass/objects/_footer.scss */
   .wrapper-footer .complementary-text .pricing-btns .box-btn {
     display: block;
     width: 100%;
   }
 }
+/* line 64, ../sass/objects/_footer.scss */
+.wrapper-footer .complementary-text .pricing-btns .box-btn h3 {
+  font-size: 16px;
+  font-size: 1.14286rem;
+}
+/* line 68, ../sass/objects/_footer.scss */
+.wrapper-footer .complementary-text .pricing-btns .box-btn p {
+  font-size: 14px;
+  font-size: 1rem;
+}
 
-/* line 67, ../sass/objects/_footer.scss */
+/* line 76, ../sass/objects/_footer.scss */
 .sub-footer {
   background: rgba(0, 0, 0, 0.21);
   color: #fff;

@@ -9,6 +9,7 @@
     display: inline-block;
     vertical-align: top;
     padding: 2em 1.5em 2em 4.4em;
+    font-family: $font;
 
      @media screen and (max-width: 850px) {
       width: 50%;
@@ -21,12 +22,13 @@
     h3 {
       padding-bottom: .625em;
       @include font-size(24);
-      font-weight: 400;
+      font-weight: 700;
     }
 
     p {
       @include font-size(16);
       line-height:1.428571429;
+      font-weight: 400;
     }
   }
 

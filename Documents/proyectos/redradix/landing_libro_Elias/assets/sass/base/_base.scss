@@ -58,6 +58,10 @@ p a{
   @include font-size(16);
   font-weight: bold;
 }
+
+.small {
+  font-weight: 300;
+}
  
 //text align
 .centered {
