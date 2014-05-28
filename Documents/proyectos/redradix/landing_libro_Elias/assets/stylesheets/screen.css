@@ -252,6 +252,33 @@ input[type="radio"] {
 /*------------------------------------*\
     $SPECIFIC FORMS
 \*------------------------------------*/
+/* line 46, ../sass/base/_forms.scss */
+.normal-form {
+  margin: 2em auto;
+}
+/* line 49, ../sass/base/_forms.scss */
+.normal-form input {
+  border: 1px solid #555;
+  opacity: .5;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  padding: 1em;
+  outline: none;
+  margin-bottom: 2em;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+/* line 61, ../sass/base/_forms.scss */
+.normal-form .btn {
+  font-weight: 700;
+  font-size: 15px;
+  font-size: 1.07143rem;
+  padding: .8em;
+}
+
 /*------------------------------------*\
     $GRID
 \*------------------------------------*/
@@ -563,66 +590,71 @@ table {
 }
 
 /* line 32, ../sass/objects/_icons.scss */
+.icon-thumbs-up:before {
+  content: "\f164";
+}
+
+/* line 35, ../sass/objects/_icons.scss */
 .icon-envelope:before {
   content: "\e609";
 }
 
-/* line 35, ../sass/objects/_icons.scss */
+/* line 38, ../sass/objects/_icons.scss */
 .icon-next:before {
   content: "\e608";
 }
 
-/* line 38, ../sass/objects/_icons.scss */
+/* line 41, ../sass/objects/_icons.scss */
 .icon-linkedin:before {
   content: "\e607";
 }
 
-/* line 41, ../sass/objects/_icons.scss */
+/* line 44, ../sass/objects/_icons.scss */
 .icon-file:before {
   content: "\e615";
 }
 
-/* line 44, ../sass/objects/_icons.scss */
+/* line 47, ../sass/objects/_icons.scss */
 .icon-bubble:before {
   content: "\e600";
 }
 
-/* line 47, ../sass/objects/_icons.scss */
+/* line 50, ../sass/objects/_icons.scss */
 .icon-heart:before {
   content: "\e601";
 }
 
-/* line 50, ../sass/objects/_icons.scss */
+/* line 53, ../sass/objects/_icons.scss */
 .icon-googleplus:before {
   content: "\e603";
 }
 
-/* line 53, ../sass/objects/_icons.scss */
+/* line 56, ../sass/objects/_icons.scss */
 .icon-facebook:before {
   content: "\e605";
 }
 
-/* line 56, ../sass/objects/_icons.scss */
+/* line 59, ../sass/objects/_icons.scss */
 .icon-twitter:before {
   content: "\e606";
 }
 
-/* line 59, ../sass/objects/_icons.scss */
+/* line 62, ../sass/objects/_icons.scss */
 .icon-pencil:before {
   content: "\e604";
 }
 
-/* line 62, ../sass/objects/_icons.scss */
+/* line 65, ../sass/objects/_icons.scss */
 .icon-quotes-left:before {
   content: "\e60a";
 }
 
-/* line 65, ../sass/objects/_icons.scss */
+/* line 68, ../sass/objects/_icons.scss */
 .icon-arrow-right:before {
   content: "\e602";
 }
 
-/* line 68, ../sass/objects/_icons.scss */
+/* line 71, ../sass/objects/_icons.scss */
 .icon-arrow-left:before {
   content: "\e60b";
 }
@@ -1003,6 +1035,35 @@ figure img {
 /* line 68, ../sass/objects/_sections.scss */
 .reviews .info-user a:hover {
   text-decoration: underline;
+}
+
+/* line 74, ../sass/objects/_sections.scss */
+.subscribe {
+  background-color: #e8f8f5;
+}
+/* line 77, ../sass/objects/_sections.scss */
+.subscribe .normal-form {
+  width: 100%;
+}
+/* line 80, ../sass/objects/_sections.scss */
+.subscribe .normal-form input {
+  width: 50%;
+}
+@media screen and (max-width: 650px) {
+  /* line 80, ../sass/objects/_sections.scss */
+  .subscribe .normal-form input {
+    width: 90%;
+  }
+}
+/* line 86, ../sass/objects/_sections.scss */
+.subscribe .normal-form .btn {
+  width: 30%;
+}
+@media screen and (max-width: 650px) {
+  /* line 86, ../sass/objects/_sections.scss */
+  .subscribe .normal-form .btn {
+    width: 90%;
+  }
 }
 
 /*------------------------------------------*\

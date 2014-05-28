@@ -69,6 +69,26 @@
       text-decoration: underline;
     }
    }
+}
 
+.subscribe {
+  background-color: $primary;
 
+  .normal-form {
+    width: 100%;
+
+    input {
+      width: 50%;
+      @media screen and (max-width: 650px) {
+        width: 90%;
+      }
+    }
+    .btn {
+      width: 30%;
+
+      @media screen and (max-width: 650px) {
+        width: 90%;
+      }
+    }
+  }
 }
